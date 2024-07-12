@@ -1,0 +1,25 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+int main(){
+    int t,n=0;
+    cin>>t;
+    vector<string> s;
+    string ch;
+    for (int i = 0; i < t; i++)
+    {
+        cin>>ch;
+        s.push_back(ch);
+    }
+    for (int i = 0; i < s.size(); i++)
+    {   
+        if(s[i].size()>10)
+        {
+            n=(s[i].size())-2;
+            cout<<s[i].front()<<n<<s[i].back()<<"\n";
+        }else{
+            cout<<s[i]<<"\n";
+        }
+    }  
+    return 0;
+}
