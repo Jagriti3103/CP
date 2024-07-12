@@ -1,0 +1,24 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main(){
+    string s;
+    cin>>s;
+    int num=0;
+    vector <int> v;
+    for (int i = 0; i < s.size(); i++)
+    {
+        if(s[i] !='+'){
+            num = s[i]-'0';
+            v.push_back(num);
+        }
+    }
+    sort(v.begin(),v.end());
+    for (auto it = v.begin(); it != v.end(); ++it) {
+        cout << *it;
+        if (it != v.end()-1) { // Check if it's not the last element
+            cout << "+";
+        }
+    }
+    return 0;
+}
