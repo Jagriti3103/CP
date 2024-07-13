@@ -1,0 +1,14 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main(){
+    int wa,wb,year=0;
+    cin>>wa>>wb;
+    while(wa <= wb){
+        wa *= 3;
+        wb *= 2;
+        year++;
+    }
+    cout<<year;
+    return 0;
+}
