@@ -1,0 +1,23 @@
+#include <bits/stdc++.h>
+using namespace std;
+#define fastread()      (ios_base:: sync_with_stdio(false),cin.tie(NULL));
+
+int main() {
+    fastread();
+    int t;
+    int res=0;
+    cin>>t;
+    vector<pair<int, int>> p(t);
+    for(auto &it: p){
+        cin>>it.first>>it.second;
+    }
+    for(auto &it: p)
+    {
+        if(it.first == 1){
+            cout<<1<<"\n";
+        }
+        else{res = (it.first * (it.second)) - ( it.second -1 );
+        cout<<res<<"\n";}
+    }
+    return 0;
+}
